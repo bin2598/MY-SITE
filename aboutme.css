@@ -1,0 +1,44 @@
+.container-fluid{
+    /* background-color: darkslategray; */
+    padding-bottom: 100px;
+    color:white;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+.container{
+    background-color: black;
+    color: salmon;
+    margin-top: 100px;
+    padding: 50px;
+    line-height: 50px;
+}
+.container a{
+    color: salmon;
+}
+p{
+    color: salmon;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+address{
+    font-size: 35px;
+}
+.container:hover{
+    background-color: black;
+    color: salmon;
+    border: 10px solid salmon;
+}
+.container:hover a{
+    color: salmon;
+    font-style: italic;
+}
+.back{
+    color: salmon;
+}
+.back:hover{
+    color: wheat;
+}

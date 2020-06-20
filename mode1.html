@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mode1</title>
+        <link rel="stylesheet" href="mode1.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    </head>
+    <body class="container-fluid-sm bg-dark">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#skill").click(function(){
+                    $("#skills").toggle();
+                })
+            })
+        </script>
+    <div class="row">
+        <div class="col-md-4">
+            <ul>
+                <li><i class="fas fa-bars"></i>
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="career.html">Career</a></li>           
+                    <li id="skill" title="Click" style="color: salmon;"><a>Skills</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="img/BIBIN's Resume.pdf" target="_blank">My Resume</a></li>
+                </ul></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div id="img">
+                <img src="img/binpic5.png">
+            </div>
+            <div class="name">
+                <h1><b>Hi,<br>I'm<br>Bibin Baby</b></h1>
+                <p>Software Proffesional</p>
+            </div>
+
+            <div>
+                <a href="contact.html"><button>Contact Me</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="icon">
+        <span style="color: salmon;font-size: 15px;">Follow me</span><br>
+        <a href="https://www.facebook.com/bibin.bibin.1257" title="facebook"><i class="fab fa-facebook-f"></i></a>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <a href="https://github.com/bin2598" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="mode">
+        change mode <i class="fas fa-arrow-right"></i>
+        <a href="index.html"><span><i class="fas fa-arrow-left">Home</i></span>
+            <a><span id="i1"> 1 <i class="fas fa-arrow-right"></i></span> </a>
+        <a href="mode2.html"><span> 2 <i class="fas fa-arrow-right"></i></span> </a>
+        <a href="mode3.html"><span> 3 <i class="fas fa-arrow-right"></i></span></a>
+    </div>
+
+    <div id="skills" style="display: none; cursor: pointer;">
+        <h1>Skills</h1>
+            <table>
+                <tr><th>Python</th><th>Django</th></tr>
+                <tr><th>Angular</th><th>Javascript</th></tr>
+                <tr><th>HTML5</th><th>CSS3</th></tr>
+                <tr><th>Bootstrap</th><th>SQL</th></tr>
+            </table>
+    </div>
+
+    </body>
+</html>

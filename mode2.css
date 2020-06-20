@@ -1,0 +1,265 @@
+
+/* .container {
+    background-color: black;
+    background-attachment: fixed;
+} */
+.MAIN{
+    background-color: black;
+}
+img{
+    border-radius: 1000px white;
+    border: 2px;
+    opacity: 0.7;
+}
+
+nav{
+    background-color: teal;
+    width: 100%;
+    height: 50px; 
+    position: fixed; 
+    top: 0;
+    z-index: 1;
+}
+nav ul{
+    /* justify-content: center; */
+    margin-right: 80px;
+    display: block;
+}
+
+nav ul li{
+    display: block;
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-top: 15px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+}
+nav ul li ul{
+    display: none;
+    background:teal;
+    /* display: block; */
+    position: absolute;
+    padding: 15px;
+    border-radius:0 0 10px 10px
+}
+nav ul li ul li{
+    /* justify-content: center; */
+    width: 120px;
+    margin-top: 10px;
+}
+nav ul ul li a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: thistle;
+}
+nav ul li ul li:hover{
+    background-color:white;
+    text-decoration: none;
+    color: teal;
+}
+nav ul li ul li a:hover{
+    text-decoration: none;
+    color: teal;
+    font-size: 20px;
+}
+nav ul:hover ul{
+    display: block;
+}
+#icon{
+    margin:50px 350px;
+    color: cadetblue;
+    font-size: 20px;
+}
+#icon span,i{
+    padding: 10px;
+}
+#icon{
+    color: grey;
+}
+#icon a:hover{
+    color:white;
+    font-size: 22px;
+}
+
+div div p{
+    float: right;
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+    padding-right: 450px;
+}
+div div img{
+    margin-top: 10px;
+    height: 200px; 
+    width: 200px;
+    /* float: left; */
+}
+
+.head{
+    margin:100px 200px 0px 200px;
+    padding:50px;
+    background-color: rgba(61, 110, 173, 0.2);
+}
+.head p {
+    margin-left: 300px;
+    text-shadow: 3px 5px teal;
+    position: absolute;
+}
+.head:hover{
+    background-color: rgb(30, 121, 121,0.8);
+    color: whit;
+}
+.mode{
+    margin:100px 0 0 200px;
+    color: black;
+}
+.mode span{
+    margin-left: 10px;
+    padding: 13px;
+    color:black;
+    background-color:rgb(128, 128, 128,0.2);
+    border-radius: 50%;
+}
+.mode #i1{
+    background-color:rgb(128, 128, 128,0.2);
+}
+.mode a:hover{
+    text-decoration: none;
+}
+.mode a[href=""]:hover span{
+    background-color:rgb(128, 128, 128,0.2);
+}
+.mode span:hover{
+    background-color: white;
+    color: black;
+}
+
+.aboutme {
+    background-color:rgb(95, 158, 160,0.8);
+    margin: 100px 300px;
+    padding: 100px;
+    font-size: 25px;
+    color:white;
+    border-radius: 20px;
+    transition: background-color 1s;
+}
+.aboutme:hover{
+    background-color: rgb(95, 158, 160, 0.4);
+    color:white;
+}
+.aboutme address{
+    display: none;
+    visibility: hidden;
+    font-family: monospace;
+}
+.aboutme:hover address {
+    display: block;
+    visibility: visible;
+}
+.aboutme p:hover{
+    display: block;
+}
+
+.col-sm-5 h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.a{
+    background-color:rgb(59, 90, 173);
+    padding: 100px;
+    margin-left: 10px;
+    color:white;
+    font-size: 25px;
+    transition: background-color 1s;
+}
+.a address{
+    display: none;
+    font-family: monospace;
+}
+.a:hover{
+    background-color:rgb(59, 90, 173,0.5);
+    display: block;
+}
+.a:hover address{
+    display: block;
+}
+.b{
+    background-color: rgb(199, 54, 54);
+    padding: 100px;
+    color:white;
+    margin-left: 5px;
+    font-size: 25px;
+    transition: background-color 1s;
+}
+.b address{
+    display: none;
+    font-family: monospace;
+}
+.b:hover{
+    background-color: rgba(179, 18, 18, 0.5);
+}
+
+.b:hover address{
+    display:block;
+}
+address a{
+    font-style: italic;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+.skills{
+    margin: 100px 0 0 450px;
+    width: 400px;
+    padding: 50px;
+    background-color: seagreen;
+    color: white;
+}
+.skills h1{
+    text-align: center;
+}
+table tr th{
+    text-align: center;
+    /* float:right; */
+    padding: 20px;
+}
+table{
+    margin-left: 50px;
+    display: none;
+}
+th:hover{
+    color: wheat;
+    font-family: cursive;
+}
+.skills:hover table{
+    display: block;
+}
+h3{
+    color:white;
+    float: right;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border:2px solid white;
+    border-radius:50px;
+}
+h3:hover{
+    background-color: white;
+    color: black;
+}
+.foot{
+    background-color: blanchedalmond;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    margin-top: 0px;
+}

@@ -1,0 +1,74 @@
+h1{
+    padding-top: 100px;
+    color:salmon;
+    text-shadow: 1px 0px red;
+    text-align: center;
+}
+
+i{
+    color: salmon;
+    transition: 1s ease;
+    font-size: 40px;
+}
+.contact{
+    margin-left: 0px;
+    text-align: center;
+}
+span{
+    text-align: center;
+    padding: 50px;
+    display: inline-block;
+    margin: 80px;
+    border: 2px solid salmon;
+    height: 150px;
+    width:150px;
+    transition: 0.5s linear;
+}
+span p{
+    margin-top: 0px;
+    font-size: 14px;
+    position: absolute;
+    line-height: 30px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translate(-33%,-35%);
+    transition: 0.5s ease-in;
+    color:salmon;
+}
+span:hover p,span:hover{
+    opacity:1;
+    background-color: salmon;
+    color: black;
+}
+span:hover i{
+    transform: scale(3);
+    opacity: 0;
+}
+form{
+    display: block;
+    margin:0px 0 0 0px;
+    text-align: center;
+}
+form input{
+    width: 25%;
+    border:none;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+form input:hover{
+    background-color: rgb(231, 223, 223);
+}
+form input[type="button"]{
+    background-color: salmon;
+    color: white;
+}
+form input[type="button"]:hover{
+    background-color: rgb(28, 153, 28);
+    color: white;
+}
+footer p{
+    color: salmon;
+    text-align: center;
+    padding-top: 50px;
+}
