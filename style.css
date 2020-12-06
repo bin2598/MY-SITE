@@ -1,16 +1,17 @@
 body{
     margin: auto;
     padding: auto;
+    background-color: black;
 }
 
 .watsap{
-    bottom: 50px;
+    bottom: 30px;
     left: 30px;
     position: fixed;
     z-index: 10;
 }
 .watsap i{
-    font-size: 80px;
+    font-size: 70px;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 20px black;
 }
@@ -30,7 +31,7 @@ body{
     display: block;
     margin: auto;
     margin-top: 100px;
-    background-color: rgb(2, 78, 78);
+    background-color: rgb(2, 78, 78, 0.3);
     height: 400px;
     max-width: 70%;
     border-radius: 5px;
@@ -49,14 +50,15 @@ body{
     margin: 5% 0 0 10%;
 }
 .main #myname{
-    padding: 100px;
+    padding-top: 50px;
     display: block;
     margin: auto;
+    transform: translateX(10%);
 }
 .main #myname p{
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     left: 200px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 200;
     color: seashell;
 }
@@ -69,7 +71,6 @@ body{
 .media{
     display: block;
     font-size: 20px;
-    color: darkslategray;
     z-index: 0;
     margin-top: 10px;
     max-width: 300px;
@@ -77,7 +78,7 @@ body{
     /* background-color: darkviolet; */
 }
 .media a, .media i{
-    color: darkslategray;
+    color: rgb(204, 226, 226);
     padding: 5px;
     transition: transform .5s;
 }
@@ -104,29 +105,38 @@ body{
     float: right;
     position: fixed;
     right: 0;
+    width: auto;
     margin-top: 0px;
-    /* height: 50px; */
     z-index: 5;
+    
 }
 .nav li a{
     font-size: 13px;
-    padding: 0 20px;
-    color: darkslategray;
+    /* padding: 5px; */
+    color: rgb(209, 228, 228);
     text-decoration: none;
-    transition: .5s;
 }
-.nav li a:hover{
-    transform: scale(2);
+.nav li{
+    text-align: center;
+    width: 80px;
+    transition: .1s;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+.nav li:hover{
+    transform: scale(1.1);
     color: darkgreen;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 1px 1px 4px white;
+    /* border: 1px solid white; */
 }
 .nav .conn{
-    padding: 10px;
     background-color: rgb(0, 100, 0);
     color: white;
 }
+.nav .conn a{
+    color: white;
+}
 .nav .conn:hover{
-    background-color: rgb(0, 100, 0, 0.5);
     box-shadow: none;
 }
 
@@ -136,14 +146,36 @@ body{
 .stick{
     justify-content: center;
     background-color: white;
-    padding: 30px;
-    width: 100%;
+    padding: 10px;
+    min-width: 100%;
+    height: 50px;
     text-align: center;
     top: 0;
+    padding-bottom: 10px;
 }
 .stick li a{
+    color: darkgreen;
     font-size: 15px;
     font-weight: 450;
+}
+.stick li{
+    width: 100px;
+    padding-top:8px;
+    border-radius: 5px;
+}
+.stick li:hover{
+    transform: scale(1.1);
+    color: darkgreen;
+    box-shadow: 1px 1px 5px darkgreen;
+    border: 1px solid white;
+}
+.stick .conn li{
+    background-color: white;
+    border-radius: 0px;
+}
+.stick .conn li a{
+    /* background-color: white; */
+    color: darkgreen;
 }
 
 /* ------------------------------------------------ */
@@ -269,10 +301,12 @@ body{
         top: 10px;
         z-index: 7;
         position: relative;
-        color: darkgreen;
     }
-    .menu-toggler{
-        color:darkgreen green;
+    .menu-toggler i:nth-child(1){
+        font-size: 35px;
+    }
+    .menu-toggler i:nth-child(1),.menu-toggler i:nth-child(2){
+        right: 20px;
     }
     .menu-toggler i:nth-child(2),.menu-toggler.active i:nth-child(1){
         opacity: 0;
@@ -280,15 +314,13 @@ body{
     .menu-toggler.active i:nth-child(2),.menu-toggler i:nth-child(1){
         opacity: 1;
     }
-    
-
 
     .watsap i{
-        position: absolute;
-        font-size: 40px;
+        position: fixed;
+        font-size: 45px;
         color: rgb(52, 189, 52);
+        left: 10px;
     }
-
 
     .nav{
         display: block;
@@ -305,12 +337,13 @@ body{
         right: 0;
     }
     .nav li{
+        width: 100%;
         color: oldlace;
         text-align: center;
         border-bottom: 1px solid white;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         background-color: black;
-        padding: 10px;
+        padding: 8px;
         z-index: 10;
     }
     .nav li a{
@@ -323,7 +356,8 @@ body{
         box-shadow: none;
     }
     .nav li:hover{
-        background-color: white;
+        background-color: green;
+        transform: scale(1);
     }
     .stick{
     transition: none;
@@ -341,19 +375,14 @@ body{
     font-size: 15px;
     font-weight: 450;
 }
-.abb{
+.nav .abb{
     margin-top: 100px;
     border-top: 1px solid white;
 }
-.conn{
-    background-color: black;
+.nav .conn{
+    background: none;
     font-weight: 300;
 }
-
-
-
-
-
 
     /* ---------------------------------- */
 
@@ -378,22 +407,21 @@ body{
         position: relative;
     }
     .main #myname{
-        float: left;
-        position: absolute;
-        transform: translateY(-20%);
+        /* float: left; */
+        position: relative;
+        transform: translateY(-10%);
+        left: 10px;
     }
     .main #myname p{
-        letter-spacing: 2px;
-        left: 20px;
-        font-size: 10px;
+        letter-spacing: 0px;
+        font-size: 12px;
         color: seashell;
-        position: relative;
     }
 
     /* ----------------------------------- */
 
     .media{
-        font-size: 10px;
+        font-size: 12px;
         max-width: 200px;
     }
 
@@ -401,6 +429,8 @@ body{
 
 .menu-toggler i{
     font-size: 30px;
+    color: rgb(74, 209, 74);
+    text-shadow: 2px 2px 5px black;
 }
 
 /* -------------------------------------- */
@@ -423,6 +453,21 @@ body{
     color: darkgreen;
     font-size: 13px;
 }
+#aboutme:hover,#education:hover{
+    transform: none;
+    box-shadow: none;
+    background-color: white;
+    color: darkgreen;
+    border-top: none;
+}
+#career:hover, #skills:hover{
+    transform: none;
+    box-shadow: none;
+    background-color:  white;
+    color: darkgreen;
+    border: none;
+}
+
 .main-me h1{
     font-size: 18px;
 }
@@ -487,7 +532,5 @@ body{
     font-size: 10px;
     padding: 10px;
 }
-
-
 
 }
